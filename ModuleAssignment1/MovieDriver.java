@@ -20,9 +20,9 @@ public class MovieDriver {
 		System.out.println("Creating movies");
 		// TODO add your code here.
 	//	Scanner scan = new Scanner(System.in);
-		Movie movie1 = new Movie("Movie1", "Date1", 100);
-		Movie movie2 = new Movie("Movie2", "Date2", 150);
-		Movie movie3 = new Movie("Movie3", "Date3", 200);
+		Movie movie1 = new Movie("Platoon", "1986", 120);
+		Movie movie2 = new Movie("Pirates of the Caribbean", "2003", 143);
+		Movie movie3 = new Movie("The Lord of the Rings: The Fellowship of the Ring", "2001", 178);
 		// System.out.println("Movie Title");
 		movies.put(0, movie1);
 		// System.out.println("Movie Length");
