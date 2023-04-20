@@ -1,3 +1,4 @@
+
 /**
  * 
  * @param searchTerm
@@ -9,11 +10,11 @@ import java.util.Scanner;
 
 import javax.swing.DefaultBoundedRangeModel;
 
-public class Notebook_driver{
-    public static void main(String args[]){
+public class Notebook_driver {
+    public static void main(String args[]) {
         Notebook notebook1 = new Notebook();
         Scanner inStream = new Scanner(System.in);
-        //ArrayList<String> testList = new ArrayList<String>();
+        // ArrayList<String> testList = new ArrayList<String>();
 
         System.out.println("Welcome... to your Notebook!");
         System.out.println(" ");
@@ -21,27 +22,26 @@ public class Notebook_driver{
         String userInputQuit = "null";
         String userInput = "";
 
-        do{
+        do {
             System.out.print("C:\\User\\yourname> ");
             userInput = inStream.nextLine();
-            if(userInput == ""){
+            if (userInput == "") {
                 userInput = inStream.nextLine();
             }
-            
 
-            switch (userInput){
-                
-                case "menu": //command options
+            switch (userInput) {
+
+                case "menu": // command options
                     mainMenu();
                     break;
-                case "gl": //get list
+                case "gl": // get list
                     System.out.println(notebook1.getNotes());
                     break;
-                case "gs": //get size
-                System.out.println(notebook1.numberOfNotes());
+                case "gs": // get size
+                    System.out.println(notebook1.numberOfNotes());
                     break;
-                case "an": //add note
-                    
+                case "an": // add note
+
                     System.out.print("Enter note text: ");
                     String note = inStream.nextLine();
                     System.out.print("Enter index: ");
@@ -49,28 +49,28 @@ public class Notebook_driver{
                     notebook1.addNote(index, note);
                     break;
 
-                case "dn": //delete note
-                
+                case "dn": // delete note
+
                     System.out.print("Enter index: ");
                     index = inStream.nextInt();
                     notebook1.deleteNote(index);
                     break;
 
-                case "gn": //get note
+                case "gn": // get note
 
                     System.out.print("Enter index: ");
                     index = inStream.nextInt();
                     System.out.println(notebook1.getNote(index));
                     break;
 
-                case "gnn": //get note number
+                case "gnn": // get note number
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
                     System.out.println(notebook1.getNoteNumber(note));
                     break;
 
-                case "sn": //set note
+                case "sn": // set note
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
@@ -79,7 +79,7 @@ public class Notebook_driver{
                     notebook1.setNote(index, note);
                     break;
 
-                case "mu": //move up
+                case "mu": // move up
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
@@ -94,14 +94,14 @@ public class Notebook_driver{
                     notebook1.moveNoteUpLoop(note, index);
                     break;
 
-                case "md": //move down
+                case "md": // move down
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
                     notebook1.moveNoteDown(note);
                     break;
 
-                case "mdl": //move down looped
+                case "mdl": // move down looped
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
@@ -110,7 +110,7 @@ public class Notebook_driver{
                     notebook1.moveNoteDownLoop(note, index);
                     break;
 
-                case "mtt": //move to top
+                case "mtt": // move to top
 
                     System.out.print("Enter note text: ");
                     note = inStream.nextLine();
@@ -122,22 +122,19 @@ public class Notebook_driver{
                     note = inStream.nextLine();
                     notebook1.moveNoteToBottom(note);
                     break;
-                case "q": //quit
+                case "q": // quit
                     userInputQuit = "q";
-                break;
-                
+                    break;
+
                 default:
-                 System.out.println("Not a valid command");
-                break;
-                //Java code;
+                    System.out.println("Not a valid command");
+                    break;
+                // Java code;
             }
 
-        }while(userInputQuit != "q");
+        } while (userInputQuit != "q");
 
         System.out.println("Until next time...");
-
-
-
 
         // System.out.println("Note list: " + notebook1.getNotes());
         // System.out.println("Note list size: " + notebook1.numberOfNotes());
@@ -147,33 +144,30 @@ public class Notebook_driver{
 
         // System.out.println("Note list: " + notebook1.getNotes());
         // System.out.println("Note list size: " + notebook1.numberOfNotes());
-        
-    }
-
-    public static void mainMenu(){
-
-            System.out.println("-----------Main Menu-----------");
-            System.out.println("--------Command Options--------");
-            System.out.println("Menu-----------------------menu");
-            System.out.println("quit--------------------------q");
-            System.out.println("Get List---------------------gl");
-            System.out.println("Get List Size----------------gs");
-            System.out.println("Add Note---------------------an");
-            System.out.println("Delete Note------------------dn");
-            System.out.println("Get Note---------------------gn");
-            System.out.println("Get Note Number-------------gnn");
-            System.out.println("Set Note---------------------sn");
-            System.out.println("Move Up----------------------mu");
-            System.out.println("Move Up Looped--------------mul");
-            System.out.println("Move Down--------------------md");
-            System.out.println("Move Down Looped------------mdl");
-            System.out.println("Move To Top-----------------mtt");
-            System.out.println("Move To Bottom--------------mtb");
-            System.out.println(" ");
-            
-            
-            
 
     }
-    
+
+    public static void mainMenu() {
+
+        System.out.println("-----------Main Menu-----------");
+        System.out.println("--------Command Options--------");
+        System.out.println("Menu-----------------------menu");
+        System.out.println("quit--------------------------q");
+        System.out.println("Get List---------------------gl");
+        System.out.println("Get List Size----------------gs");
+        System.out.println("Add Note---------------------an");
+        System.out.println("Delete Note------------------dn");
+        System.out.println("Get Note---------------------gn");
+        System.out.println("Get Note Number-------------gnn");
+        System.out.println("Set Note---------------------sn");
+        System.out.println("Move Up----------------------mu");
+        System.out.println("Move Up Looped--------------mul");
+        System.out.println("Move Down--------------------md");
+        System.out.println("Move Down Looped------------mdl");
+        System.out.println("Move To Top-----------------mtt");
+        System.out.println("Move To Bottom--------------mtb");
+        System.out.println(" ");
+
+    }
+
 }
