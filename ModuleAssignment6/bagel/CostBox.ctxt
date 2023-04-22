@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=CostBox
+comment1.params=
+comment1.target=CostBox()
+comment10.params=btnExit
+comment10.target=void\ setBtnExit(javafx.scene.control.Button)
+comment2.params=button
+comment2.target=void\ styleButton(javafx.scene.control.Button)
+comment3.params=label
+comment3.target=void\ styleOutputLabel(javafx.scene.control.Label)
+comment4.params=
+comment4.target=javafx.scene.control.Label\ getTxtSub()
+comment5.params=
+comment5.target=javafx.scene.control.Label\ getTxtTax()
+comment6.params=
+comment6.target=javafx.scene.control.Label\ getTxtTotal()
+comment7.params=
+comment7.target=javafx.scene.control.Button\ getBtnCalc()
+comment8.params=btnCalc
+comment8.target=void\ setBtnCalc(javafx.scene.control.Button)
+comment9.params=
+comment9.target=javafx.scene.control.Button\ getBtnExit()
+numComments=11

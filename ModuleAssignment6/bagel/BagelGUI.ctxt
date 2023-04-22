@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BagelGUI
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ init()
+comment3.params=mainStage
+comment3.target=void\ start(javafx.stage.Stage)
+comment4.params=
+comment4.target=void\ stop()
+comment5.params=mainPane
+comment5.target=void\ setupControls(javafx.scene.layout.BorderPane)
+comment6.params=stage\ scene
+comment6.target=void\ setStage(javafx.stage.Stage,\ javafx.scene.Scene)
+comment7.params=
+comment7.target=void\ calculate()
+numComments=8

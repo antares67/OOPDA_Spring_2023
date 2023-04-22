@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ToppingBox
+comment0.text=\r\n\ This\ will\ be\ a\ VBox\ that\ contains\ a\ TitledPane\ which\ contains\r\n\ another\ VBox\ that\ holds\ radio\ buttons\ for\ bagels\r\n\ \r\n\ @author\ Jack\r\n\r\n
+comment1.params=
+comment1.target=ToppingBox()
+comment1.text=\r\n\ \ Constructor\r\n
+comment2.params=
+comment2.target=double\ getToppingCost()
+comment2.text=\r\n\ \ The\ getBagelCost\ method\ returns\ the\ cost\ of\r\n\ \ the\ selected\ bagel.\r\n
+numComments=3
